@@ -2,11 +2,9 @@
 webshellHunter是基于findWebshell工具引入机器学习随机森林算法改进后的一款webshell检测系统，可以通过图形化用户界面，方便地检测webshell后门。
 
 ## 使用说明
-    本系统通过GUI界面的按钮设定扫描路径、webshell后缀名类型以及检测开始。webshellHunter主要针对php格式的webshell进行了检测方法的改进，其他findWebshell中
-对于asp、aspx以及jsp格式的webshell仍为findWebshell的检测方法。
-"webshell-test-samples.zip"为webshell测试样本；
-"tet1508-1305.csv"为机器学习模型使用的数据特征集合（自己收集数据集制作而成）；
-"***.html"（多个网页文件）为作者本人自己测试工具产生的检测报告仅供参考。
+###本系统通过GUI界面的按钮设定扫描路径、webshell后缀名类型以及检测开始。webshellHunter主要针对php格式的webshell进行了检测方法的改进，其他findWebshell中对于asp、aspx以及jsp格式的webshell仍为findWebshell的检测方法。
+- "webshell-test-samples.zip"为webshell测试样本；
+- "***.html"（多个网页文件）为作者本人自己测试工具产生的检测报告仅供参考。
 
    
 ========================================================================================================================================
