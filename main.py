@@ -146,9 +146,9 @@ def detection(value,filepath):
 					if rf_feature[i]!=0:
 						opcode_string.append(opcode_dic[i-6])
 				string_connect=','.join(opcode_string)			
-				filemode = 'DAWA-MDF('+ string_connect +')后门'
+				filemode = 'WDM-FDF('+ string_connect +')后门'
 			else:
-				filemode = 'DAWA-MDF普通型后门'			
+				filemode = 'WDM-FDF普通型后门'			
 			if prediction == [1.]:
 				if filemode:
 					mtime = getFileTime(fullpath)
@@ -204,7 +204,7 @@ def open_html():
 
 if __name__ == '__main__':	
 	root = Tk()     #构建Tk窗体
-	root.title("~webshellHunter~")
+	root.title("~WebshellHunter~")
 	#blackList = []#resList=[]
 	filepath1 = StringVar()
 	filepath1.set(' ')

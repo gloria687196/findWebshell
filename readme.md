@@ -1,25 +1,17 @@
 ## 工具简介
-findWebshell是一款基于python开发的webshell检查工具，可以通过配置脚本，方便得检测webshell后门。
+webshellHunter是基于findWebshell工具引入机器学习随机森林算法改进后的一款webshell检测系统，可以通过图形化用户界面，方便地检测webshell后门。
 
 ## 使用说明
-    Usage: main.py [options]
+    本系统通过GUI界面的按钮设定扫描路径、webshell后缀名类型以及检测开始。webshellHunter主要针对php格式的webshell进行了检测方法的改进，其他findWebshell中
+对于asp、aspx以及jsp格式的webshell仍为findWebshell的检测方法。
+"webshell-test-samples.zip"为webshell测试样本；
+"tet1508-1305.csv"为机器学习模型使用的数据特征集合（自己收集数据集制作而成）；
+"***.html"（多个网页文件）为作者本人自己测试工具产生的检测报告仅供参考。
 
-    Options:
-      -h, --help            show this help message and exit
-      -p PATH, --path=PATH  input web directory filepath
-      -o OUTPUT, --output=OUTPUT
-                            create a html report
-      -e php|asp|aspx|jsp|all, --ext=php|asp|aspx|jsp|all
-                            define what's file format to scan
-
-## 示例
-    
-    python main.py -e php -p /var/www/test -o output
-    -e 网页格式
-    -p 扫描的路径
-    -o 生成的html文件名，默认生成report.html
-
-## 开发文档
+   
+========================================================================================================================================
+————————————————————————————————————————————————————————————————————
+## 开发文档（以下为findWebshell的相关开发文档）
 ### 字典添加
 - directory目录下的sensitiveWord.py定义的是后门中的敏感关键字，可以手动添加，格式为{"关键字":"类型"}
 
